@@ -1,0 +1,22 @@
+.auth { min-height: 100vh; background: var(--ink); display: flex; flex-direction: column; }
+.auth__bar { padding: 1.25rem var(--gutter); }
+.auth__main { flex: 1; display: grid; place-items: start center; padding: 2rem var(--gutter) 4rem; }
+.auth__card {
+  width: min(100%, 420px);
+  display: flex; flex-direction: column; gap: 1.1rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: var(--ink-raised); border: 1px solid var(--line); border-radius: 8px;
+}
+.auth__title { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+.auth__hint { color: var(--scarlet-text); font-weight: 500; margin-top: -0.5rem; }
+.auth__field { display: flex; flex-direction: column; gap: 0.35rem; }
+.auth__field label { font-size: 0.9rem; color: var(--text-dim); }
+.auth__field input {
+  min-height: 48px; padding: 0 0.9rem; border-radius: 4px;
+  background: var(--ink-sunken); border: 1px solid #4a4a4a; color: #fff;
+}
+.auth__field input[aria-invalid='true'] { border-color: #ff6b6b; }
+.auth__switch { color: var(--text-dim); }
+.auth__link { background: none; border: 0; padding: 0; color: #fff; font-weight: 600; text-decoration: underline; }
+.auth__link:hover { color: var(--scarlet-hover); }
+.auth__back a { color: var(--text-dim); font-size: 0.9rem; text-decoration: underline; }

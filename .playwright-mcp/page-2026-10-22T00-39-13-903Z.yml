@@ -1,0 +1,20 @@
+- generic [ref=f5e3]:
+  - banner [ref=f5e6]:
+    - link "FleurDeLysFlix home" [ref=f5e7] [cursor=pointer]:
+      - /url: /
+      - text: FleurDeLysFlix
+    - link "Sign In" [ref=f5e8] [cursor=pointer]:
+      - /url: /signin
+  - main [ref=f5e9]:
+    - heading "FleurDeLysFlix Unlimited Movies & TV Shows. Anytime. Anywhere." [level=1] [ref=f5e10]:
+      - generic [ref=f5e11]: FleurDeLysFlix
+      - generic [ref=f5e12]: Unlimited Movies & TV Shows.
+      - generic [ref=f5e13]: Anytime. Anywhere.
+    - region [ref=f5e14]:
+      - heading "Become a member today" [level=2] [ref=f5e15]
+      - paragraph [ref=f5e16]: Enter your email to create your membership.
+      - generic [ref=f5e17]:
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]: Email address
+          - textbox "Email address" [ref=f5e20]
+        - button "Create membership" [ref=f5e21] [cursor=pointer]

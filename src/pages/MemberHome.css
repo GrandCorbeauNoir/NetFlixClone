@@ -1,0 +1,18 @@
+.mhome { padding: 0 var(--gutter) 4rem; }
+.mhome__welcome {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 0.75rem; padding: clamp(3rem, 12vh, 7rem) 0 3rem;
+}
+.mhome__title { font-size: clamp(1.75rem, 4.2vw, 3.25rem); font-weight: 700; line-height: 1.1; text-wrap: balance; }
+.mhome__brand { color: var(--scarlet); }
+.mhome__tag { font-size: clamp(1.05rem, 2vw, 1.5rem); color: var(--text-dim); text-wrap: balance; }
+
+.mhome__browse { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.mhome__sub { font-size: 1.1rem; font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+.chip {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1rem;
+  border: 1px solid #4a4a4a; border-radius: 999px; color: var(--text-dim);
+  transition: color 160ms var(--ease-out), border-color 160ms var(--ease-out), background-color 160ms var(--ease-out);
+}
+.chip:hover { color: #fff; border-color: #fff; background: rgb(255 255 255 / 0.06); }

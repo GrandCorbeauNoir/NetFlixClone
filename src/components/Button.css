@@ -1,0 +1,17 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 1.25rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--scarlet);
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out);
+}
+.btn:hover { background: var(--scarlet-hover); }
+.btn:active { transform: scale(0.97); }
+.btn--lg { min-height: 52px; padding: 0 1.75rem; font-size: 1.1rem; }
+.btn--block { width: 100%; }

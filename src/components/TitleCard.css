@@ -1,0 +1,28 @@
+.tcard { position: relative; display: flex; flex-direction: column; gap: 0.6rem; list-style: none; }
+.tcard__fav { position: absolute; top: 0.5rem; right: 0.5rem; z-index: 2; }
+.tcard__poster {
+  transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out), outline-color 160ms var(--ease-out);
+  outline: 2px solid transparent; outline-offset: 0;
+}
+@media (hover: hover) and (pointer: fine) {
+  .tcard:hover .tcard__poster {
+    transform: scale(1.04);
+    box-shadow: 0 14px 32px rgb(0 0 0 / 0.65);
+    outline-color: #fff;
+  }
+}
+.tcard:has(.tcard__btn:focus-visible) .tcard__poster { outline-color: #fff; outline-offset: 2px; }
+.tcard:active .tcard__poster { transform: scale(0.98); }
+
+.tcard__meta { display: flex; flex-direction: column; gap: 0.1rem; }
+.tcard__btn {
+  padding: 0; background: none; border: 0; color: inherit; text-align: left;
+  font-weight: 600; line-height: 1.25;
+}
+.tcard__btn::after { content: ''; position: absolute; inset: 0; z-index: 1; }
+.tcard__btn:focus-visible { outline: none; }
+.tcard__sub { font-size: 0.85rem; color: var(--text-dim); }
+.tcard__desc {
+  margin-top: 0.25rem; font-size: 0.85rem; line-height: 1.4; color: var(--text-dim);
+  display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}

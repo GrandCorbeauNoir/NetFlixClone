@@ -1,0 +1,44 @@
+.tmodal {
+  width: min(880px, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem);
+  padding: 0; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--ink-raised); color: var(--text); overflow: auto;
+  box-shadow: 0 30px 80px rgb(0 0 0 / 0.8);
+}
+.tmodal[open] { animation: modal-in 240ms var(--ease-out); }
+.tmodal::backdrop { background: rgb(0 0 0 / 0.75); animation: fade-in 200ms ease-out; }
+@keyframes modal-in { from { opacity: 0; transform: translateY(12px) scale(0.97); } }
+@keyframes modal-out { to { opacity: 0; transform: translateY(6px) scale(0.985); } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes fade-out { to { opacity: 0; } }
+/* Exits are quicker and move less than the enter. */
+.tmodal.is-closing { animation: modal-out 140ms cubic-bezier(0.4, 0, 1, 1) forwards; }
+.tmodal.is-closing::backdrop { animation: fade-out 140ms ease-in forwards; }
+
+.tmodal__card {
+  position: relative; display: grid; grid-template-columns: 280px 1fr; gap: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+.tmodal__poster { width: 100%; align-self: start; }
+.tmodal__close {
+  position: absolute; top: 0.75rem; right: 0.75rem; z-index: 1;
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 999px;
+  background: rgb(0 0 0 / 0.55); border: 0; color: #fff;
+  transition: background-color 160ms var(--ease-out);
+}
+.tmodal__close:hover { background: rgb(255 255 255 / 0.18); }
+
+.tmodal__body { display: flex; flex-direction: column; gap: 0.9rem; padding-top: 0.25rem; min-width: 0; }
+.tmodal__title { font-size: clamp(1.75rem, 3.5vw, 2.5rem); font-weight: 700; line-height: 1.1; padding-right: 3rem; text-wrap: balance; }
+.tmodal__meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; color: var(--text-dim); font-size: 0.95rem; }
+.tmodal__rating { padding: 0 0.4rem; border: 1px solid #6b6b6b; border-radius: 3px; }
+.tmodal__genres { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.tmodal__genres li { padding: 0.2rem 0.75rem; border-radius: 999px; background: rgb(255 255 255 / 0.08); font-size: 0.875rem; }
+.tmodal__desc { font-size: 1.05rem; line-height: 1.65; max-width: 60ch; }
+.tmodal__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: auto; padding-top: 0.5rem; }
+.tmodal__play { gap: 0.5rem; padding-right: 2rem; }
+
+@media (max-width: 700px) {
+  .tmodal__card { grid-template-columns: 1fr; gap: 1.25rem; }
+  .tmodal__poster { width: min(60%, 240px); justify-self: center; }
+  .tmodal__title { padding-right: 0; }
+}

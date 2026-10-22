@@ -1,0 +1,9 @@
+.logo {
+  font-family: var(--font-display);
+  color: var(--scarlet);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  display: inline-block;
+}
+.logo--md { font-size: clamp(1.75rem, 3vw, 2.25rem); }
+.logo--lg { font-size: clamp(2.25rem, 5vw, 3rem); }

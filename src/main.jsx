@@ -1,0 +1,19 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import './index.css'
+import App from './App.jsx'
+import { AppProvider } from './state/AppContext.jsx'
+import { CatalogProvider } from './state/CatalogContext.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+      <AppProvider>
+        <CatalogProvider>
+          <App />
+        </CatalogProvider>
+      </AppProvider>
+    </BrowserRouter>
+  </StrictMode>,
+)

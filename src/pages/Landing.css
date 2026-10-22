@@ -1,0 +1,61 @@
+.field-error { color: #ff6b6b; font-size: 0.875rem; margin-top: 0.4rem; text-align: left; animation: error-in 160ms var(--ease-out); }
+@keyframes error-in { from { opacity: 0; transform: translateY(-3px); } }
+
+.landing { position: relative; min-height: 100vh; overflow: hidden; background: var(--ink-sunken); }
+
+.landing__collage {
+  position: absolute; inset: -20% -10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  transform: rotate(-8deg) scale(1.15);
+  opacity: 0.95;
+  filter: brightness(1.7) saturate(1.15);
+}
+.landing__scrim {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 48%, rgb(11 11 11 / 0.92) 0%, rgb(11 11 11 / 0.8) 45%, rgb(11 11 11 / 0.4) 100%),
+    linear-gradient(to bottom, rgb(11 11 11 / 0.85), transparent 22%, transparent 78%, var(--ink));
+}
+
+.landing__bar {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem var(--gutter);
+}
+
+.landing__hero {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: clamp(3rem, 12vh, 8rem) var(--gutter) 4rem;
+  gap: 2.5rem;
+  animation: rise 600ms var(--ease-out) both;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+
+.landing__title { display: flex; flex-direction: column; gap: 0.25rem; font-weight: 400; }
+.landing__brand {
+  font-family: var(--font-display); color: var(--scarlet);
+  font-size: clamp(3.5rem, 11vw, 7.5rem); line-height: 0.95; letter-spacing: 0.02em;
+}
+.landing__tag {
+  font-size: clamp(1.15rem, 2.6vw, 1.75rem); font-weight: 600; text-wrap: balance;
+}
+
+.offer { width: min(100%, 640px); display: flex; flex-direction: column; gap: 0.5rem; }
+.offer__title { font-size: 1.25rem; font-weight: 600; }
+.offer__copy { color: var(--text-dim); }
+.offer__form { display: flex; gap: 0.75rem; margin-top: 0.75rem; align-items: flex-start; }
+.offer__field { flex: 1; }
+.offer__field input {
+  width: 100%; min-height: 52px; padding: 0 1rem; border-radius: 4px;
+  background: rgb(22 22 22 / 0.75); border: 1px solid #6b6b6b; color: #fff;
+}
+.offer__field input[aria-invalid='true'] { border-color: #ff6b6b; }
+.offer__field input::placeholder { color: #9a9a9a; }
+
+@media (max-width: 600px) {
+  .landing__collage { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 6px; }
+  .offer__form { flex-direction: column; align-items: stretch; }
+}

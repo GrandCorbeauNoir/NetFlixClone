@@ -1,0 +1,30 @@
+.donate { min-height: 100vh; padding: calc(var(--nav-h) + 2rem) var(--gutter) 4rem; display: grid; place-items: start center; }
+.donate__card-wrap {
+  width: min(100%, 480px); display: flex; flex-direction: column; gap: 1.1rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem); background: var(--ink-raised); border: 1px solid var(--line); border-radius: 8px;
+}
+.donate__title { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+.donate__lead { color: var(--text-dim); }
+.donate__form { display: flex; flex-direction: column; gap: 1.1rem; }
+.donate__amounts { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.9rem; min-width: 0; }
+.donate__amounts legend { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 0.5rem; }
+.donate__presets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+.donate__preset {
+  min-height: 48px; border-radius: 4px; background: var(--ink-sunken); border: 1px solid #4a4a4a; color: #fff; font-weight: 600;
+  transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out);
+}
+.donate__preset:hover { border-color: #fff; }
+.donate__preset:active { transform: scale(0.97); }
+.donate__preset[aria-pressed='true'] { background: var(--scarlet); border-color: var(--scarlet); }
+.donate__field { display: flex; flex-direction: column; gap: 0.35rem; }
+.donate__field label { font-size: 0.9rem; color: var(--text-dim); }
+.donate__field input, .donate__card {
+  min-height: 48px; padding: 0 0.9rem; border-radius: 4px; background: var(--ink-sunken); border: 1px solid #4a4a4a; color: #fff;
+}
+.donate__card { display: flex; flex-direction: column; justify-content: center; }
+.donate__card > * { width: 100%; }
+.donate__field input[aria-invalid='true'] { border-color: #ff6b6b; }
+.donate__error { color: #ff6b6b; font-weight: 500; }
+.donate__result { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.donate button:disabled { opacity: 0.6; cursor: not-allowed; }
+.donate button:focus-visible, .donate input:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }

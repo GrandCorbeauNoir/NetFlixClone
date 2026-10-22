@@ -1,0 +1,103 @@
+- generic [ref=f4e2]:
+  - banner [ref=f4e22]:
+    - generic [ref=f4e23]:
+      - link "FleurDeLysFlix home" [ref=f4e24] [cursor=pointer]:
+        - /url: /
+        - text: FleurDeLysFlix
+      - generic [ref=f4e25]:
+        - navigation "Primary" [ref=f4e26]:
+          - link "Home" [ref=f4e27] [cursor=pointer]:
+            - /url: /browse
+          - link "Movies" [ref=f4e28] [cursor=pointer]:
+            - /url: /movies
+          - link "TV Shows" [ref=f4e29] [cursor=pointer]:
+            - /url: /tv
+          - link "Favorites 4 saved" [ref=f4e30] [cursor=pointer]:
+            - /url: /favorites
+            - text: Favorites
+            - generic "4 saved" [ref=f4e31]: "4"
+          - button "Categories" [ref=f4e33] [cursor=pointer]
+          - search [ref=f4e36]:
+            - generic [ref=f4e37]: Search titles
+            - searchbox "Search titles" [ref=f4e38]
+            - button "Search" [ref=f4e39] [cursor=pointer]
+        - button "Sign out" [ref=f4e43] [cursor=pointer]
+  - main [ref=f4e44]:
+    - generic [ref=f4e45]:
+      - heading "Welcome to FleurDeLysFlix" [level=1] [ref=f4e46]
+      - paragraph [ref=f4e47]: Unlimited Movies & TV Shows. Anytime. Anywhere.
+    - region [ref=f4e48]:
+      - heading "Pick a category" [level=2] [ref=f4e49]
+      - list [ref=f4e50]:
+        - listitem [ref=f4e51]:
+          - link "Action" [ref=f4e52] [cursor=pointer]:
+            - /url: /category/Action
+        - listitem [ref=f4e53]:
+          - link "Action & Adventure" [ref=f4e54] [cursor=pointer]:
+            - /url: /category/Action%20%26%20Adventure
+        - listitem [ref=f4e55]:
+          - link "Adventure" [ref=f4e56] [cursor=pointer]:
+            - /url: /category/Adventure
+        - listitem [ref=f4e57]:
+          - link "Animation" [ref=f4e58] [cursor=pointer]:
+            - /url: /category/Animation
+        - listitem [ref=f4e59]:
+          - link "Comedy" [ref=f4e60] [cursor=pointer]:
+            - /url: /category/Comedy
+        - listitem [ref=f4e61]:
+          - link "Crime" [ref=f4e62] [cursor=pointer]:
+            - /url: /category/Crime
+        - listitem [ref=f4e63]:
+          - link "Documentary" [ref=f4e64] [cursor=pointer]:
+            - /url: /category/Documentary
+        - listitem [ref=f4e65]:
+          - link "Drama" [ref=f4e66] [cursor=pointer]:
+            - /url: /category/Drama
+        - listitem [ref=f4e67]:
+          - link "Family" [ref=f4e68] [cursor=pointer]:
+            - /url: /category/Family
+        - listitem [ref=f4e69]:
+          - link "Fantasy" [ref=f4e70] [cursor=pointer]:
+            - /url: /category/Fantasy
+        - listitem [ref=f4e71]:
+          - link "History" [ref=f4e72] [cursor=pointer]:
+            - /url: /category/History
+        - listitem [ref=f4e73]:
+          - link "Horror" [ref=f4e74] [cursor=pointer]:
+            - /url: /category/Horror
+        - listitem [ref=f4e75]:
+          - link "Kids" [ref=f4e76] [cursor=pointer]:
+            - /url: /category/Kids
+        - listitem [ref=f4e77]:
+          - link "Music" [ref=f4e78] [cursor=pointer]:
+            - /url: /category/Music
+        - listitem [ref=f4e79]:
+          - link "Mystery" [ref=f4e80] [cursor=pointer]:
+            - /url: /category/Mystery
+        - listitem [ref=f4e81]:
+          - link "News" [ref=f4e82] [cursor=pointer]:
+            - /url: /category/News
+        - listitem [ref=f4e83]:
+          - link "Reality" [ref=f4e84] [cursor=pointer]:
+            - /url: /category/Reality
+        - listitem [ref=f4e85]:
+          - link "Romance" [ref=f4e86] [cursor=pointer]:
+            - /url: /category/Romance
+        - listitem [ref=f4e87]:
+          - link "Sci-Fi & Fantasy" [ref=f4e88] [cursor=pointer]:
+            - /url: /category/Sci-Fi%20%26%20Fantasy
+        - listitem [ref=f4e89]:
+          - link "Science Fiction" [ref=f4e90] [cursor=pointer]:
+            - /url: /category/Science%20Fiction
+        - listitem [ref=f4e91]:
+          - link "Soap" [ref=f4e92] [cursor=pointer]:
+            - /url: /category/Soap
+        - listitem [ref=f4e93]:
+          - link "Talk" [ref=f4e94] [cursor=pointer]:
+            - /url: /category/Talk
+        - listitem [ref=f4e95]:
+          - link "Thriller" [ref=f4e96] [cursor=pointer]:
+            - /url: /category/Thriller
+        - listitem [ref=f4e97]:
+          - link "War" [ref=f4e98] [cursor=pointer]:
+            - /url: /category/War

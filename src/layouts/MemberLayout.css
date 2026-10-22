@@ -1,0 +1,9 @@
+.donate-fab {
+  position: fixed; right: clamp(16px, 3vw, 32px); bottom: clamp(16px, 3vw, 32px); z-index: 40;
+  width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%;
+  background: var(--ink-raised); color: #fff; border: 1px solid var(--line);
+  transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out);
+}
+.donate-fab:hover { background: var(--scarlet); }
+.donate-fab:active { transform: scale(0.95); }
+.donate-fab:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
