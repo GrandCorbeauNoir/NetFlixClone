@@ -20,7 +20,10 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  background: var(--ink);
+  background:
+    linear-gradient(rgb(20 20 20 / 0.1), rgb(20 20 20 / 0.25)),
+    url('/castle.jpg') center / cover fixed no-repeat,
+    var(--ink);
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
