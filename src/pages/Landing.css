@@ -1,7 +1,8 @@
 .field-error { color: #ff6b6b; font-size: 0.875rem; margin-top: 0.4rem; text-align: left; animation: error-in 160ms var(--ease-out); }
 @keyframes error-in { from { opacity: 0; transform: translateY(-3px); } }
 
-.landing { position: relative; min-height: 100vh; overflow: hidden; background: var(--ink-sunken); }
+.landing { position: relative; min-height: 100vh; overflow: hidden; background: url('/castle.jpg') center / cover no-repeat, var(--ink-sunken); }
+.landing__collage { display: none; }
 
 .landing__collage {
   position: absolute; inset: -20% -10%;
@@ -15,8 +16,8 @@
 .landing__scrim {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 50% 48%, rgb(11 11 11 / 0.92) 0%, rgb(11 11 11 / 0.8) 45%, rgb(11 11 11 / 0.4) 100%),
-    linear-gradient(to bottom, rgb(11 11 11 / 0.85), transparent 22%, transparent 78%, var(--ink));
+    radial-gradient(ellipse 60% 50% at 50% 48%, rgb(11 11 11 / 0.4) 0%, rgb(11 11 11 / 0.22) 45%, rgb(11 11 11 / 0) 100%),
+    linear-gradient(to bottom, rgb(11 11 11 / 0.35), transparent 22%, transparent 78%, rgb(11 11 11 / 0.3));
 }
 
 .landing__bar {
